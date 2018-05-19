@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sgc.web:
+    image: ${DOCKER_REGISTRY}sgcweb
+    build:
+      context: .
+      dockerfile: SGC.Web/Dockerfile
